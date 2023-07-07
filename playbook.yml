@@ -1,0 +1,10 @@
+---
+- name: Provisioning MySQL
+  hosts: default
+  become: true
+
+  vars:
+    mysql_root_password: "pass"
+
+  roles:
+    - mysql
